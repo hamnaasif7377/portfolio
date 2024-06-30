@@ -1,0 +1,276 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url('bc.png'); /* Background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+  margin: auto; /* 1 inch margin from all sides */
+}
+
+.container {
+  max-width: calc(100% - 2in); /* Maximum width minus 2 inches for margins */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(247, 164, 255); /* Container background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6); /* Header background color */
+  color: #fff;
+  padding: 5px 0; /* Padding */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5rem; /* Font size */
+  margin-left: 20px; /* Margin */
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px; /* Margin */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Font size */
+}
+
+/* Hero section styles */
+#hero {
+  position: relative;
+  background-color: rgb(247, 164, 255); /* Fallback color */
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1in;
+  border-radius: 50px;
+}
+
+.hero-container {
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  background-color: rgb(247, 164, 255); 
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero-content {
+  flex: 1; /* Allow content to take available space */
+  color: black;
+  text-align: left; /* Align text to the left */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Font size */
+  margin-bottom: 10px; /* Margin */
+}
+
+.hero-content h2 {
+  font-size: 2rem; /* Font size */
+  margin: 0; /* Margin */
+}
+
+.hero-content img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Round image */
+  margin-left: 20px; /* Margin */
+}
+
+section {
+  padding: 40px 0;
+  margin-top: 160px; /* Space below the fixed header and hero section */
+}
+
+h2 {
+  font-size: 2rem; /* Font size */
+  margin-bottom: 20px; /* Margin */
+  text-align: center;
+}
+
+/* About Me section styles */
+.about-container {
+  background-color: rgb(247, 164, 255); /* Container background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Margin */
+}
+
+.bio img {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Round image */
+  margin-right: 20px; /* Margin */
+}
+
+.bio-info p {
+  margin-bottom: 10px; /* Margin */
+}
+
+.bio-info p strong {
+  font-weight: bold;
+}
+
+/* Add a border around the bio section for better visual separation */
+.bio-info {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Project pictures container */
+.project-pics {
+  display: flex;
+  margin-top: 20px; /* Margin */
+}
+
+.project-pics img {
+  width: 200px; /* Image width */
+  height: auto;
+  margin-right: 10px; /* Margin */
+}
+
+.project {
+  margin-bottom: 30px; /* Margin */
+  padding: 20px; /* Padding */
+  background-color: #fff; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.project h3 {
+  font-size: 1.5rem; /* Font size */
+  margin-bottom: 10px; /* Margin */
+}
+
+/* Contact section styles */
+.contact-container {
+  background-color: rgb(247, 164, 255); /* Container background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.contact-info p {
+  margin-bottom: 10px; /* Margin */
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px; /* Margin */
+}
+
+form input[type="email"],
+form button {
+  padding: 10px;
+  margin-bottom: 10px; /* Margin */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #6e0569; /* Button background color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c755bd; /* Hover background color */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6); /* Footer background color */
+  color: #fff;
+  text-align: center;
+  padding: 5px 0; /* Padding */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 10px; /* Margin */
+  }
+
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio img {
+    margin: 0 auto 20px; /* Margin */
+  }
+
+  .hero-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .hero-content {
+    text-align: center; /* Center text on small screens */
+  }
+
+  .project-pics {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center;
+  }
+
+  .project-pics img {
+    margin-bottom: 10px; /* Margin */
+  }
+}
